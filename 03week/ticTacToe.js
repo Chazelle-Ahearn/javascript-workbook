@@ -70,7 +70,7 @@ function ticTacToe(row, column) {
   // Your code here
   //manipulate the board (place an X or O) array based on the user inpute (row, column)
   let selectedRow = board[row];
-  selectedRow[column] = 'X';
+  selectedRow[column] = playerTurn;
 
     //manipulate the playerTurn varibale and switch from either X or O, OR, O to X
  if (playerTurn === 'X'){
