@@ -51,19 +51,60 @@ function horizontalWin() {
 function verticalWin() {
   // Your code here
   //check the columns of the board for a match
-}
+
+if (
+  board[0][0] === playerTurn && 
+  board[1][0] === playerTurn && 
+  board[2][0] === playerTurn
+  ) {
+    return true;
+  } else if (
+  board[0][1] === playerTurn && 
+  board[1][1] === playerTurn && 
+  board[2][1] === playerTurn
+  ) {
+    return true;
+  } else if (
+    board[0][2] === playerTurn && 
+    board[1][2] === playerTurn && 
+    board[2][2] === playerTurn
+    ){
+      return true;
+    }
+    
+  }
 
 function diagonalWin() {
   // Your code here
   //check the for a line patteron top left to bottom right on the board 
   //check the for a line patteron top right to bottom left on the board 
-}
+
+  if (
+    board[0][0] === playerTurn && 
+    board[1][1] === playerTurn && 
+    board[2][2] === playerTurn
+    ) {
+      return true;
+    } else if (
+    board[2][0] === playerTurn && 
+    board[1][1] === playerTurn && 
+    board[0][2] === playerTurn
+    ) {
+      return true;
+    } 
+      
+    }
+
 
 function checkForWin() {
   // Your code here
   //check for horizontal, vertical, and diagonal wins
   //return true if any of those checks return true
   //
+  if (horizontalWin ||  verticalWin  || diagonalWin){
+    return true;
+  }
+
 }
 
 function ticTacToe(row, column) {
