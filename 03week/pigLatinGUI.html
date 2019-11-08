@@ -65,7 +65,7 @@
 
 <script>
 
-
+//Create a function for an event to happen when press submit
 document.getElementById('button').addEventListener('click', newWord);
 
 function newWord() {
@@ -74,7 +74,7 @@ document.getElementById('pigLatin').innerText = (pigLatin(str));
 }
 
 
-
+//create a for floop to find vowels at the beginning of words and do something, otherwise return "ay" with a consonant word
 function pigLatin(word) {
 
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
@@ -96,17 +96,18 @@ return secondString + firstString + 'ay';
 }
 }
 
+//function to find the first vowel, and then to slice the word and move to end
 function pigLatin(word) {
 word = word.toLowerCase().trim();
 
-let firstPosition = findFirstVowelPosition(word);
+let firstPosition = firstVowelInWord(word);
 if (firstPosition > 0) {
 return word.slice(firstPosition) + word.slice(0, firstPosition) + 'ay';
 } else {
 return word + 'yay';
 }
 }
-function findFirstVowelPosition(word) {
+function firstVowelInWord(word) {
 for (let i = 0; i < word.length; i++) {
 if ('aeiouy'.indexOf(word[i]) !== -1) {
 return i;
