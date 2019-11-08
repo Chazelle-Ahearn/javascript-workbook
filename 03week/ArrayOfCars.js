@@ -9,8 +9,8 @@ const cars = ['Ford', 'Cadillac', 'Chevy', 'VW'];
 // Create another array called more cars with 4 more different types of cars. The last car type should be Honda.
 // Use the concat method to combine the cars and moreCars arrays into an array called totalCars.
 const cars = ['Ford', 'Cadillac', 'Chevy', 'VW'];
-
 const moreCars = ['GM', 'Lincoln', 'Tesla', 'Honda'];
+
 const totalCars = cars.concat(moreCars); 
   console.log(totalCars);
 
@@ -19,6 +19,7 @@ const totalCars = cars.concat(moreCars);
 const moreCars = ['GM', 'Lincoln', 'Tesla', 'Honda'];
   let x = moreCars.indexOf("Honda");
    console.log(x);
+  
 // Use the lastIndexOf method to console.log the index of Ford.
 const cars = ['Ford', 'Cadillac', 'Chevy', 'VW'];
 const moreCars = ['GM', 'Lincoln', 'Tesla', 'Honda'];
@@ -39,8 +40,8 @@ const totalCars = cars.concat(moreCars);
 // split
 // Use the split method to convert stringOfCars back intro an array called totalCars.
 const cars = ['Ford', 'Cadillac', 'Chevy', 'VW'];
-
 const moreCars = ['GM', 'Lincoln', 'Tesla', 'Honda'];
+
 const totalCars = cars.concat(moreCars); 
   let stringOfCars = totalCars.join();
   console.log(stringOfCars);
