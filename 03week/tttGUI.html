@@ -16,6 +16,9 @@
         </style>
     </head>
     <body>
+      <div id="winBanner">
+      
+      </div>
         <table>
             <tr>
                 <td data-row="0" data-col="0" class="board-square">-</td>
@@ -49,6 +52,11 @@ function ticTacToe(row, column) {
 let selectedRow = board[row];
 selectedRow[column] = playerTurn;
 
+if (checkForWin()){
+  console.log("WINNER!!!");
+
+};
+
 console.log(playerTurn);
 if (playerTurn === "X") {
 playerTurn = "O";
@@ -60,7 +68,7 @@ console.log(playerTurn);
 }
 
 squares.forEach(function(item) {
-item.addEventListener("click", handleClick);
+  item.addEventListener("click", handleClick);
 });
 
 function handleClick (event) {
@@ -68,6 +76,7 @@ console.log({target: event.target});
 
 let square = event.target;
 square.textContent = playerTurn;
+square.removeEventListener("click", handleClick);
 
 let squareCol =square.dataset.col;
 let squareRow =square.dataset.row;
@@ -170,6 +179,7 @@ function checkForWin() {
 //call horizontal, vertical, and diagonal wins
 //return true if any of those checks return true
 if (horizontalWin() || verticalWin() || diagonalWin()) {
+  document.getElementById('winBanner').innerText = "YOU WIN, CHAZELLE!"
 return true;
 }
 return false
