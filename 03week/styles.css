@@ -1,0 +1,109 @@
+body{
+  background-color: rgb(185, 185, 209);
+}
+
+#canvas{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  align-content: center;
+}
+
+#title{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: rgb(69, 69, 78);
+  font-family: cursive;
+  font-size: 40px;
+}
+
+.directions{
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+#towers{
+  display: flex;
+  justify-content: space-around;
+}
+
+.t1, .t2, .t3 {
+  padding: 2px;
+  width: 5px;
+  height: 150px;
+  background: rgb(96, 85, 138);
+  margin: 10px 0 0 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.base1, .base2, .base3{
+  width: 170px;
+  border-bottom: 9px solid black;
+  border-radius: 2px; 
+  
+}
+
+.a{
+  height:20px;
+  width:125px;
+  margin: 140px 0 0 20px;
+  background-color: rgb(108, 70, 245);
+  border: solid black;
+  position: absolute;
+}
+
+.b{
+  height:20px;
+  width:100px;
+  margin: 115px 0 0 33px;
+  background-color: rgb(70, 204, 245);
+  border: solid black;
+  position: absolute;
+}
+
+.c{
+  height:20px;
+  width:75px;
+  margin: 90px 0 0 45px;
+  background-color: rgb(70, 245, 114);
+  border: solid black;
+  position: absolute;
+}
+
+.d{
+  height:20px;
+  width:40px;
+  margin: 65px 0 0 60px;
+  background-color: rgb(245, 228, 70);
+  border: solid black;
+  position: absolute;
+}
+
+.buttons{
+  font-family: cursive;
+  font-size: 15px;
+  text-transform: uppercase;
+  height: 50px;
+  width:90px;
+  border-radius: 15px;
+  background-color: #515ca3;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#restart{
+  margin: auto;
+}
+
+.buttons:hover{
+  opacity: 1;
+}

@@ -21,6 +21,7 @@ function printStacks() {
 
 function movePiece() {
   // Your code here
+  
 
 }
 
@@ -92,3 +93,106 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
+
+
+// 'use strict';
+
+// $(document).ready(function() {
+//   let towers =[[[], $(".line1")], [[], $(".line2")], [[], $(".line3")]],
+//   moves = 0;
+//   discs = null;
+//   hold = null;
+
+//   function clear(){
+//     towers[0][1].empty();
+//     towers[1][1].empty();
+//     towers[2][1].empty();
+//   }
+
+//   function drawdiscs() {
+//     clear();
+//     for (let i = 0; i < 3; i++) {
+//       if (!jQuery.isEmptyObject(towers[i][0])) {
+//         for (let j = 0; j < towers[i][0].length; j++) {
+//           towers[i][1].append(
+//             $(
+//               "<li id='disc" +
+//                towers[i][0][j] +
+//                "' value='" +
+//                towers[i][0][j] +
+//                "'></li>"
+//             )
+//           );
+//         }
+//       }
+//     }
+//   }
+
+//   function init() {
+//     clear();
+//     towers = [[[], $(".line1")], [[], $(".line2")], [[], $(".line3")]];
+//     discs = document.getElementById("box").value;
+//     moves = 0;
+//     hold = null;
+//     for (let i = discs; i > 0; i--) towers [0][0].push(i);
+//     drawdiscs();
+//     $(".moves").text(moves + " moves");
+//   }
+
+//   function handle(tower) {
+//     if (hold === null) {
+//       if (!jQuery.isEmptyObject(towers[towers][0])){
+//         hold = tower;
+//         towers[hold][1]
+//         .children()
+//         .last()
+//         .css("margin-top", "-170px");
+//       }
+//     } else {
+//       let move = moveDisc(hold, tower);
+//       moves += 1;
+//       $(".moves").text(moves + " moves");
+//       if (move == 1) {
+//         drawdiscs();
+//       } else {
+//         alert("You can't place a bigger disc on a smaller one");
+//       }
+//       hold = null;
+//       }
+//       if (solved()) $(".moves").text("Solved with " + moves + " moves!");
+//     }
+
+//     funtion moveDisc(a, b) {
+//       let from = towers[a][0];
+//       let to = towers[b][0];
+//       if (from.length === 0) return 0;
+//       else if (to.length === 0) {
+//         to.push(from.pop());
+//         return 1;
+//       } else if (from[from.length -1] > to[to.length -1]){
+//         return 0;
+//       } else {
+//         to.push(from.pop());
+//         return 1;
+//       }
+//     }
+
+//     function solved() {
+//       if (
+//         jQuery.isEmptyObject(towers[0][0]) &&
+//         jQuery.isEmptyObject(tower[0][0]) &&
+//         towers[2][0].lenth == discs
+//       )
+//       return 1;
+//       else return 0;
+//     }
+
+//     $(".t").click(function() {
+//       handle($(this).attr("value"));
+//     });
+
+//     $("#restart").click(function() {
+//       var discs = document.getElementById("box").value;
+//       init();
+//     });
+// }
