@@ -34,7 +34,7 @@ h1{
   justify-content: space-around;
 }
 
-.t1, .t2, .t3 {
+#t1, #t2, #t3 {
   padding: 2px;
   width: 5px;
   height: 150px;
@@ -45,14 +45,14 @@ h1{
   flex-direction: row;
 }
 
-.base1, .base2, .base3{
+#base1, #base2, #base3{
   width: 170px;
   border-bottom: 9px solid black;
   border-radius: 2px; 
   
 }
 
-.a{
+#a{
   height:20px;
   width:125px;
   margin: 140px 0 0 20px;
@@ -61,7 +61,7 @@ h1{
   position: absolute;
 }
 
-.b{
+#b{
   height:20px;
   width:100px;
   margin: 115px 0 0 33px;
@@ -70,7 +70,7 @@ h1{
   position: absolute;
 }
 
-.c{
+#c{
   height:20px;
   width:75px;
   margin: 90px 0 0 45px;
@@ -79,7 +79,7 @@ h1{
   position: absolute;
 }
 
-.d{
+#d{
   height:20px;
   width:40px;
   margin: 65px 0 0 60px;
